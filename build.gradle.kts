@@ -18,3 +18,20 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
+tasks {
+    val customJar by creating(Jar::class) {
+        manifest {
+            attributes["Main-Class"] = "com.chucoding.Main"
+        }
+        from(sourceSets.main.get().output)
+    }
+
+    named("build") {
+        dependsOn(customJar)
+    }
+}
+
+tasks.withType<JavaCompile> {
+    options.encoding = "UTF-8"
+}
