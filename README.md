@@ -16,6 +16,8 @@
 <br/>
 
 ## Articles
+[CLOVA Chatbot으로 간단한 자기소개봇 만들기](https://chucoding.tistory.com/124)  
+[CLOVA Chatbot 카카오톡 연동하기](https://chucoding.tistory.com/125)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
